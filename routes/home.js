@@ -4,7 +4,7 @@ const express = require('express');
 const router = express.Router();
 
 const Server = require('../server/home');
-const { success, error } = require('../../utils/home').response;
+const { success, error } = require('../utils/home').response;
 const PlatzivideoServer = new Server;
 
 router.get('/', async (req, res) => {
